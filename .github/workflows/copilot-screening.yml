@@ -1,0 +1,45 @@
+name: "Copilot Papers Screening"
+
+# Automatically run the setup steps when they are changed to allow for easy validation, and
+# allow manual testing through the repository's "Actions" tab
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - papers/**
+
+jobs:
+  # The job MUST be called `copilot-setup-steps` or it will not be picked up by Copilot.
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+
+    # Set the permissions to the lowest permissions possible needed for your steps.
+    # Copilot will be given its own token for its operations.
+    permissions:
+      # If you want to clone the repository as part of your setup steps, for example to install dependencies, you'll need the `contents: read` permission. If you don't clone the repository in your setup steps, Copilot will do this for you automatically after the steps complete.
+      contents: read
+
+    # You can define any steps you want, and they will run before the agent starts.
+    # If you do not check out your code, Copilot will do this for you.
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Detect newly added bib files
+        id: new_bibs
+        run: |
+          if [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            ADDED=$(git diff --name-status HEAD | awk '$1=="A" && $2 ~ /^papers\/.*\.bib$/ {print $2}')
+          else
+            ADDED=$(git diff --name-status ${{ github.event.before }} ${{ github.sha }} \
+              | awk '$1=="A" && $2 ~ /^papers\/.*\.bib$/ {print $2}')
+          fi
+
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$ADDED" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Screen added papers
+        run: copilot -p "follow the prompt.md file to decide whether to accept or reject the articles' abstracts in ${{ steps.new_bibs.outputs.files }}"
