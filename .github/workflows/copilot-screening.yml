@@ -6,21 +6,12 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - papers/**
+      - papers/**/*.bib
+      - .github/workflows/copilot-screening.yml
 
 jobs:
-  # The job MUST be called `copilot-setup-steps` or it will not be picked up by Copilot.
-  copilot-setup-steps:
+  screening:
     runs-on: ubuntu-latest
-
-    # Set the permissions to the lowest permissions possible needed for your steps.
-    # Copilot will be given its own token for its operations.
-    permissions:
-      # If you want to clone the repository as part of your setup steps, for example to install dependencies, you'll need the `contents: read` permission. If you don't clone the repository in your setup steps, Copilot will do this for you automatically after the steps complete.
-      contents: read
-
-    # You can define any steps you want, and they will run before the agent starts.
-    # If you do not check out your code, Copilot will do this for you.
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -42,4 +33,8 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Screen added papers
-        run: copilot -p "follow the prompt.md file to decide whether to accept or reject the articles' abstracts in ${{ steps.new_bibs.outputs.files }}"
+        uses: github/copilot-cli-action@v1
+        with:
+          version: latest
+          instructions: |
+            Follow the prompt.md file to decide whether to accept or reject the articles' abstracts in ${{ steps.new_bibs.outputs.files }}
