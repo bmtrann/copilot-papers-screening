@@ -24,7 +24,7 @@ jobs:
           node-version: '22'
 
       - name: Install Copilot CLI
-        run: npm install -g @github/copilot-cli
+        run: npm install -g @github/copilot
 
       - name: Detect newly added bib files
         id: new_bibs
