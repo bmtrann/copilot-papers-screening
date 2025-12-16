@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        iteration: [1, 2, 3, 4, 5]
+        iteration: [1, 2, 3]
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -40,6 +40,11 @@ jobs:
           else
             ADDED=$(git diff --name-status ${{ github.event.before }} ${{ github.sha }} \
               | awk '$1=="A" && $2 ~ /^papers\/.*\.bib$/ {print $2}')
+          fi
+
+          # If no added bib files, fall back to all bib files in the repo
+          if [ -z "$ADDED" ]; then
+            ADDED=$(git ls-files 'papers/**/*.bib' || true)
           fi
 
           echo "files<<EOF" >> $GITHUB_OUTPUT
