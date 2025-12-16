@@ -9,6 +9,9 @@ on:
       - papers/**/*.bib
       - .github/workflows/copilot-screening.yml
 
+env:
+  GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
+
 jobs:
   screening:
     runs-on: ubuntu-latest
