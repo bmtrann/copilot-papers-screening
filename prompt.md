@@ -4,12 +4,12 @@ Some related terminologies to observability include monitoring, probing, perform
 
 Inclusion criteria:
 - I1: The paper targets cloud-native or container-based systems (e.g., Kubernetes, microservices, serverless).
-- I2: The paper explicitly concerns observability, monitoring or troubleshooting in a cloud-native and containerized environment.
-- I3: The paper presents at least one observability pillar (metrics, logs, traces), which is a part of an implemented observability stack or solution.
+- I2: The paper explicitly concerns observability, monitoring or troubleshooting in a cloud-native and containerized environment as the central focus.
+- I3: The paper specifically mentions at least one observability pillar (metrics, logs, traces), which is a part of an implemented observability stack or solution.
 
 Exclusion criteria:
 - E1: The paper is not in English or a secondary study.
-- E2: The paper involves domain-specific systems beyond cloud-native (e.g., IoT, 5G/B5G).
+- E2: The paper involves domain-specific systems beyond cloud-native (e.g., IoT, 5G/B5G, edge-fog-cloud continuum).
 - E3: The paper is a proposal or demonstration paper with insufficient technical detail to assess.
 
 The paper is accepted only if all three inclusion criteria are satisfied, otherwise it is rejected. If one exclusion applies, the paper is also rejected.
