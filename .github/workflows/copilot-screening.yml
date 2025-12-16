@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      # - papers/**/*.bib
+      - papers/**/*.bib
       - .github/workflows/copilot-screening.yml
 
 env:
