@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - papers/**/*.bib
+      # - papers/**/*.bib
       - .github/workflows/copilot-screening.yml
 
 env:
@@ -15,6 +15,9 @@ env:
 jobs:
   screening:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        iteration: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -43,6 +46,6 @@ jobs:
           echo "$ADDED" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Screen added papers
+      - name: Screen added papers iteration ${{ matrix.iteration }}
         run: |
           copilot -p "follow the prompt.md file to decide whether to accept or reject the articles' abstracts in ${{ steps.new_bibs.outputs.files }}"
