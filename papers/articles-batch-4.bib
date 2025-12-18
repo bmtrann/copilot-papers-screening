@@ -1,0 +1,126 @@
+@article{rayyan-384037972,
+  title={Logging design patterns for cloud-native applications - Proceedings of the 29th European Conference on Pattern Languages of Programs, People, and Practices},
+  year={2024},
+  author={Albuquerque, Carlos and Correia, Filipe},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3698322.3698351},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={EuroPLoP '24},
+  keywords={Monitoring, Design Patterns, Observability, Cloud computing, Distributed systems, Operations, DevOps, Logging},
+  abstract={Logging has long been a pillar for monitoring and troubleshooting software systems. From server and infrastructure to application-specific data, logs are an easy and quick way to collect information that may prove useful in diagnosing future issues. When systems become distributed, as is common on the cloud, logs are harder to collect and process. This paper presents three design patterns for logging in cloud-native applications. Standard Logging advises using a standard format for logs across all services and teams so they are easier to process by humans and machines. Audit Logging suggests that important user actions and system changes are recorded in a data store to ensure regulatory compliance or help investigate user-reported issues. Lastly, Log Sampling is about prioritizing logs to maintain a manageable amount of storage. These patterns were mined from existing literature on logging and cloud best practices to make them simpler to communicate, more detailed, and easier for all practitioners to understand.},
+  doi={10.1145/3698322.3698351},
+  booktitle={Proceedings of the 29th European Conference on Pattern Languages of Programs, People, and Practices},
+  chapter={0}
+}
+
+@article{rayyan-384037973,
+  title={Exploring and troubleshooting istio issues - Proceedings of the 12th ACM International Conference on Systems and Storage},
+  year={2019},
+  pages={196},
+  author={Lange, Tomer and Shribman, Aidan and Raichstein, Eran and Barabash, Katherine},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3319647.3325857},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SYSTOR '19},
+  abstract={Cloud computing gave rise to a Cloud-native[1] approach for operating application software in the cloud, whereby applications are segmented into micro-services that can be designed and deployed independently of each other. This significantly increases application maintainability, reduces time to market, and helps leveraging cloud computing model. On the other hand, this approach increases the system level complexity of the application and poses new challenges, such as how services discover each other, and how application handles individual service upgrades. To support cloud-native paradigm, new development, deployment, and orchestration tools are created. One of such tools is Istio [2] service mesh, built to connect, secure, control, and observe services. While immensely useful to application developers, Istio is an additional layer in cloud compute platform software stack and is thus prone to failure or misuse.In this work, we address the question of how to explore and troubleshoot software systems managed by Istio, focusing on micro-services upgrades and versioning. Cloud native applications are not upgraded at once like monolithic applications are. Instead, individual micro-services are gradually upgraded over time, so that older service instances live side by side with newer ones, as part of a single application. Istio supports application upgrades by splitting traffic as defined in configurable resources named virtualservices. When everything is good, Istio relieves operators from overheads related to system upgrades. The question is what happens when something goes wrong, e.g. when Istio is misconfigured. Such errors are inherently hard to detect, especially as overall systems complexity and scale grow.We have extended a real-time network topology and protocol analyzer, Skydive [4], developed to explore and troubleshoot the physical, the virtual, and the application connectivity in the cloud. To support cloud-native environments, we have developed k8s [3] and Istio probes and contributed them to the community. These probes enrich Skydive object model with k8s objects, e.g. pods and services, as well as with Istio objects, e.g. virtualservices and destinationrules.We use Bookinfo, an online book store application, to demonstrate how Skydive helps exploring misconfiguration in Istio versioning. One of Bookinfo microservices, called Reviews, has two functionally different versions, and the user expects Istio to split traffic between them according to weights configured in the related virtualservice. Figure 1 presents Skydive's representation of the actual configuration, discovered at run-time by our probes. Using this representation, aided by querying and filtering capabilities of Skydive, one can explore Istio and k8s objects and relationships between them, to debug an undesired versioning behavior.In the future, we aim at supporting additional use cases, e.g security policies, circuit breakers, timeouts, and retries. We expect that the most value will be derived from multilayer exploration combined with Skydive's capability to capture/inject traffic.},
+  doi={10.1145/3319647.3325857},
+  booktitle={Proceedings of the 12th ACM International Conference on Systems and Storage},
+  chapter={0}
+}
+
+@article{rayyan-384037974,
+  title={Deployment Tracking and Exception Tracking: monitoring design patterns for cloud-native applications - Proceedings of the 28th European Conference on Pattern Languages of Programs},
+  year={2024},
+  author={Albuquerque, Carlos and Correia, Filipe F.},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3628034.3628038},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={EuroPLoP '23},
+  keywords={Cloud computing, Design Patterns, DevOps, Distributed systems, Monitoring, Observability, Operations},
+  abstract={Monitoring a system over time is as important as ever with the increasing use of cloud-native software architectures. This paper expands the set of patterns published in a previous paper (Liveness Endpoint, Readiness Endpoint and Synthetic Testing) with two solutions for supporting teams in diagnosing occurring issues&nbsp;— Deployment Tracking and Exception Tracking. These patterns advise tracking relevant events that occur in the system. The Deployment Tracking pattern provides means to limit the sources of an anomaly, and the Exception Tracking pattern makes a specific class of anomalies visible so that a team can act on them. Both patterns help practitioners identify the root cause of an issue, which is instrumental in fixing it. They can help even less experienced professionals to improve monitoring processes, and reduce the mean time to resolve problems with their application. These patterns draw on documented industry best practices and existing tools. In order to help the reader find other patterns that supplement the ones suggested in this study, relations to already-existing monitoring patterns are also examined.},
+  doi={10.1145/3628034.3628038},
+  booktitle={Proceedings of the 28th European Conference on Pattern Languages of Programs},
+  chapter={0}
+}
+
+@article{rayyan-384037975,
+  title={Mazu: A Zero Trust Architecture for Service Mesh Control Planes - Proceedings of the 18th European Workshop on Systems Security},
+  year={2025},
+  pages={49–55},
+  author={Poudel, Aashutosh and Niroula, Pankaj and MacDonald, Collin and Gloudemans, Lily and Herwig, Stephen},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3722041.3723100},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={EuroSec'25},
+  keywords={Cloud Computing, Microservice Security, Registration-Based Encryption, Service Mesh},
+  abstract={Microservices are a dominant cloud computing architecture because they enable applications to be built as collections of loosely coupled services. To provide greater observability and control into the resultant distributed system, microservices often use an overlay proxy network called a service mesh. A key advantage of service meshes is their ability to implement zero trust networking by encrypting microservice traffic with mutually authenticated TLS. However, the service mesh control plane---particularly its local certificate authority---becomes a critical point of trust. If compromised, an attacker can issue unauthorized certificates and redirect traffic to impersonating services.In this paper, we introduce our initial work in Mazu, a system designed to eliminate trust in the service mesh control plane by replacing its certificate authority with an unprivileged principal. Mazu leverages recent advances in registration-based encryption and integrates seamlessly with Istio, a widely used service mesh. Our preliminary evaluation, using Fortio macro-benchmarks and Prometheus-assisted micro-benchmarks, shows that Mazu significantly reduces the service mesh's attack surface while adding just 0.17 ms to request latency compared to mTLS-enabled Istio.},
+  doi={10.1145/3722041.3723100},
+  booktitle={Proceedings of the 18th European Workshop on Systems Security},
+  chapter={0}
+}
+
+@article{rayyan-384037976,
+  title={Dynamic adaptation for distributed systems in model-driven engineering - Proceedings of the 25th International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings},
+  year={2022},
+  pages={146–151},
+  author={Mohammed, Mufasir Muthaher},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3550356.3558505},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={MODELS '22},
+  keywords={cloud-native, distributed systems, dynamic adaptation, model transformation, model-driven engineering},
+  abstract={Modern-day software systems operate within complex, uncertain, and highly dynamic environments. Managing such systems is a significant challenge; developing self-managing autonomic systems is one way to reduce development and maintenance efforts. In the context of distributed systems, achieving this autonomy through dynamic adaptation is particularly challenging due to the volatile host environment. Model-Driven Engineering (MDE) is a software development paradigm that advocates the use of models as the primary artifacts rather than source code. MDE promises higher-quality software at a lower cost through abstractions, automation, and analyses.The goal of our work is to leverage MDE to facilitate the development and maintenance of distributed applications with dynamic adaptation capabilities. We assume that the structure and behavior of the application has been modeled using the Component-and-Connector (C&amp;C) paradigm and the 'Monitor-Analyze-Plan-Execute with shared Knowledge' (MAPE-K) reference architecture. In the initial work, we have developed a model-level monitoring infrastructure, and adapted existing code generation and deployment support to generate a distributed system from the C&amp;C models and deploy it automatically on a suitable platform. In future work, we plan to investigate how the monitoring and adaptation capabilities of cloud-native containerization and orchestration platforms (i.e., Docker and Kubernetes) can be leveraged for dynamic adaptation, and how this system-level adaptation can be combined effectively with any model-level monitoring, planning, and adaptation capabilities.},
+  doi={10.1145/3550356.3558505},
+  booktitle={Proceedings of the 25th International Conference on Model Driven Engineering Languages and Systems: Companion Proceedings},
+  chapter={0}
+}
+
+@article{rayyan-384037977,
+  title={Index checkpoints for instant recovery in in-memory database systems},
+  year={2022},
+  month={4},
+  journal={Proc. VLDB Endow.},
+  issn={2150-8097},
+  volume={15},
+  number={8},
+  pages={1671–1683},
+  author={Lee, Leon and Xie, Siphrey and Ma, Yunus and Chen, Shimin},
+  url={https://doi-org.proxy-ub.rug.nl/10.14778/3529337.3529350},
+  publisher={VLDB Endowment},
+  abstract={We observe that the time bottleneck during the recovery phase of an IMDB (In-Memory DataBase system) shifts from log replaying to index rebuilding after the state-of-art techniques for instant recovery have been applied. In this paper, we investigate index checkpoints to eliminate this bottleneck. However, improper designs may lead to inconsistent index checkpoints or incur severe performance degradation. For the correctness challenge, we combine two techniques, i.e., deferred deletion of index entries, and on-demand clean-up of dangling index entries after recovery, to achieve data correctness. For the efficiency challenge, we propose three wait-free index checkpoint algorithms, i.e., ChainIndex, MirrorIndex, IACoW, for supporting efficient normal processing and fast recovery. We implement our proposed solutions in HiEngine, an IMDB being developed as part of Huawei's next-generation cloud-native database product. We evaluate the impact of index checkpoint persistence on recovery and transaction performance using two workloads (i.e., TPC-C and Microbench). We analyze the pros and cons of each algorithm. Our experimental results show that HiEngine can be recovered instantly (i.e., in ~10 s) with only slight (i.e., 5\% - 11\%) performance degradation. Therefore, we strongly recommend integrating index checkpointing into IMDBs if recovery time is a crucial product metric.},
+  doi={10.14778/3529337.3529350},
+  chapter={0}
+}
+
+@article{rayyan-384037978,
+  title={SafeTree: Expressive Tree Policies for Microservices},
+  year={2025},
+  month={10},
+  journal={Proc. ACM Program. Lang.},
+  volume={9},
+  author={Grewal, Karuna and Godfrey, Brighten and Hsu, Justin},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3763127},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  keywords={Microservices, Servicemesh, Visibly Pushdown Automata},
+  abstract={A microservice-based application is composed of multiple self-contained components called microservices, and controlling inter-service communication is important for enforcing safety properties. Presently, inter-service communication is configured using microservice deployment tools. However, such tools only support a limited class of single-hop policies, which can be overly permissive because they ignore the rich service tree structure of microservice calls. Policies that can express the service tree structure can offer development and security teams more fine-grained control over communication patterns.    To this end, we design an expressive policy language to specify service tree structures, and we develop a visibly pushdown automata-based dynamic enforcement mechanism to enforce service tree policies. Our technique is non-invasive: it does not require any changes to service implementations, and does not require access to microservice code. To realize our method, we build a runtime monitor on top of a service mesh, an emerging network infrastructure layer that can control inter-service communication during deployment. In particular, we employ the programmable network traffic filtering capabilities of Istio, a popular service mesh implementation, to implement an online and distributed monitor. Our experiments show that our monitor can enforce rich safety properties while adding minimal latency overhead on the order of milliseconds.},
+  doi={10.1145/3763127},
+  chapter={0}
+}
+
+@article{rayyan-384037979,
+  title={Automated profiling of virtualized media processing functions using telemetry and machine learning - Proceedings of the 9th ACM Multimedia Systems Conference},
+  year={2018},
+  pages={150–161},
+  author={Mekuria, Rufael and McGrath, Michael J. and Riccobene, Vincenzo and Bayon-Molino, Victor and Tselios, Christos and Thomson, John and Dobrodub, Artem},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3204949.3204976},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={MMSys '18},
+  keywords={characterization, cloud computing, experimentation, performance, telemetry, video streaming},
+  abstract={Most media streaming services are composed by different virtualized processing functions such as encoding, packaging, encryption, content stitching etc. Deployment of these functions in the cloud is attractive as it enables flexibility in deployment options and resource allocation for the different functions. Yet, most of the time overprovisioning of cloud resources is necessary in order to meet demand variability. This can be costly, especially for large scale deployments. Prior art proposes resource allocation based on analytical models that minimize the costs of cloud deployments under a quality of service (QoS) constraint. However, these models do not sufficiently capture the underlying complexity of services composed of multiple processing functions. Instead, we introduce a novel methodology based on full-stack telemetry and machine learning to profile virtualized or cloud native media processing functions individually. The basis of the approach consists of investigating 4 categories of performance metrics: throughput, anomaly, latency and entropy (TALE) in offline (stress tests) and online setups using cloud telemetry. Machine learning is then used to profile the media processing function in the targeted cloud/NFV environment and to extract the most relevant cloud level Key Performance Indicators (KPIs) that relate to the final perceived quality and known client side performance indicators. The results enable more efficient monitoring, as only KPI related metrics need to be collected, stored and analyzed, reducing the storage and communication footprints by over 85\%. In addition a detailed overview of the functions behavior was obtained, enabling optimized initial configuration and deployment, and more fine-grained dynamic online resource allocation reducing overprovisioning and avoiding function collapse. We further highlight the next steps towards cloud native carrier grade virtualized processing functions relevant for future network architectures such as in emerging 5G architectures.},
+  doi={10.1145/3204949.3204976},
+  booktitle={Proceedings of the 9th ACM Multimedia Systems Conference},
+  chapter={0}
+}
+
