@@ -1,0 +1,127 @@
+@article{rayyan-384037980,
+  title={Network-Centric Distributed Tracing with DeepFlow: Troubleshooting Your Microservices in Zero Code - Proceedings of the ACM SIGCOMM 2023 Conference},
+  year={2023},
+  pages={420–437},
+  author={Shen, Junxian and Zhang, Han and Xiang, Yang and Shi, Xingang and Li, Xinrui and Shen, Yunxi and Zhang, Zijian and Wu, Yongxiang and Yin, Xia and Wang, Jilong and Xu, Mingwei and Li, Yahui and Yin, Jiping and Song, Jianchang and Li, Zhuofeng and Nie, Runjie},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3603269.3604823},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={ACM SIGCOMM '23},
+  keywords={distributed tracing, application performance monitoring, network performance monitoring, eBPF},
+  abstract={Microservices are becoming more complicated, posing new challenges for traditional performance monitoring solutions. On the one hand, the rapid evolution of microservices places a significant burden on the utilization and maintenance of existing distributed tracing frameworks. On the other hand, complex infrastructure increases the probability of network performance problems and creates more blind spots on the network side. In this paper, we present DeepFlow, a network-centric distributed tracing framework for troubleshooting microservices. DeepFlow provides out-of-the-box tracing via a network-centric tracing plane and implicit context propagation. In addition, it eliminates blind spots in network infrastructure, captures network metrics in a low-cost way, and enhances correlation between different components and layers. We demonstrate analytically and empirically that DeepFlow is capable of locating microservice performance anomalies with negligible overhead. DeepFlow has already identified over 71 critical performance anomalies for more than 26 companies and has been utilized by hundreds of individual developers. Our production evaluations demonstrate that DeepFlow is able to save users hours of instrumentation efforts and reduce troubleshooting time from several hours to just a few minutes.},
+  doi={10.1145/3603269.3604823},
+  booktitle={Proceedings of the ACM SIGCOMM 2023 Conference},
+  chapter={0}
+}
+
+@article{rayyan-384037981,
+  title={Service Mesh Patterns - Proceedings of the 27th European Conference on Pattern Languages of Programs},
+  year={2023},
+  author={Duarte Maia, Jo\~{a}o Tiago and Figueiredo Correia, Filipe},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3551902.3551962},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={EuroPLop '22},
+  keywords={Architectural Patterns, Cloud-native, Control Plane, Data Plane, Design Patterns, Microservices, Service Mesh},
+  abstract={As the benefits and applicability of microservice architectures become better understood by the software industry, and this architecture becomes increasingly more adopted for building stable, independent and scalable cloud applications, a new set of concerns have alerted developers regarding communication between the different microservices. A service mesh tries to address this issue by creating a clear separation of concerns between application logic and the infrastructure needed for the communication between the different services. This is accomplished by abstracting the cross-cutting concerns related with communication out of the internal services making it possible to be reused by the different services. Existing literature describes a service mesh pattern and a sidecar pattern. This paper leans on these patterns and proposes six patterns found by observing the, what is commonly called, good practices. The six patterns are service mesh, shared communication library, node agent, sidecar, service mesh team and control plane per cluster.},
+  doi={10.1145/3551902.3551962},
+  booktitle={Proceedings of the 27th European Conference on Pattern Languages of Programs},
+  chapter={0}
+}
+
+@article{rayyan-384037982,
+  title={TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification - Proceedings of the ACM SIGCOMM 2024 Conference},
+  year={2024},
+  pages={828–842},
+  author={Ashok, Sachin and Harsh, Vipul and Godfrey, Brighten and Mittal, Radhika and Parthasarathy, Srinivasan and Shwartz, Larisa},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3651890.3672254},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={ACM SIGCOMM '24},
+  keywords={non-intrusive, distributed tracing, graph analysis, microservices},
+  abstract={Monitoring and debugging modern cloud-based applications is challenging since even a single API call can involve many interdependent distributed microservices. To provide observability for such complex systems, distributed tracing frameworks track request flow across the microservice call tree. However, such solutions require instrumenting every component of the distributed application to add and propagate tracing headers, which has slowed adoption. This paper explores whether we can trace requests without any application instrumentation, which we refer to as request trace reconstruction. To that end, we develop TraceWeaver, a system that incorporates readily available information from production settings (e.g., timestamps) and test environments (e.g., call graphs) to reconstruct request traces with usefully high accuracy. At the heart of TraceWeaver is a reconstruction algorithm that uses request-response timestamps to effectively prune the search space for mapping requests and applies statistical timing analysis techniques to reconstruct traces. Evaluation with (1) benchmark microservice applications and (2) a production microservice dataset demonstrates that TraceWeaver can achieve a high accuracy of ~90\% and can be meaningfully applied towards multiple use cases (e.g., finding slow services and A/B testing).},
+  doi={10.1145/3651890.3672254},
+  booktitle={Proceedings of the ACM SIGCOMM 2024 Conference},
+  chapter={0}
+}
+
+@article{rayyan-384037983,
+  title={Copper and Wire: Bridging Expressiveness and Performance for Service Mesh Policies - Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1},
+  year={2025},
+  pages={233–248},
+  author={Saxena, Divyanshu and Zhang, William and Pailoor, Shankara and Dillig, Isil and Akella, Aditya},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3669940.3707257},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={ASPLOS '25},
+  keywords={cloud computing, microservices, service mesh},
+  abstract={Distributed microservice applications require a convenient means of controlling L7 communication between services. Service meshes have emerged as a popular approach to achieving this. However, current service mesh frameworks are difficult to use -- they burden developers in realizing even simple communication policies, lack compatibility with diverse dataplanes, and introduce performance and resource overheads. We identify the root causes of these drawbacks and propose a ground-up new mesh architecture that overcomes them. We develop novel abstractions for mesh communication, a new mesh policy language centered on these abstractions to enable expressive policies, and a novel control plane that enables using minimal dataplane resources for policy enforcement. We develop the precise semantics of our language abstractions and demonstrate how our control plane can use them to execute policies correctly and optimally. We build and evaluate a prototype on realistic workloads and policies and open-source production traces. Our results show that complex policies can be specified in up to 6.75\texttimes{} fewer lines, enforced with up to 2.6\texttimes{} smaller tail latencies and up to 39\% fewer CPU resources than today.},
+  doi={10.1145/3669940.3707257},
+  booktitle={Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1},
+  chapter={0}
+}
+
+@article{rayyan-384037984,
+  title={LatenSeer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing - Proceedings of the 2023 ACM Symposium on Cloud Computing},
+  year={2023},
+  pages={502–519},
+  author={Zhang, Yazhuo and Isaacs, Rebecca and Yue, Yao and Yang, Juncheng and Zhang, Lei and Vigfusson, Ymir},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3620678.3624787},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SoCC '23},
+  keywords={distributed tracing, end-to-end latency, latency estimation, microservices},
+  abstract={End-to-end latency estimation in web applications is crucial for system operators to foresee the effects of potential changes, helping ensure system stability, optimize cost, and improve user experience. However, estimating latency in microservices-based architectures is challenging due to the complex interactions between hundreds or thousands of loosely coupled microservices. Current approaches either track only latency-critical paths or require laborious bespoke instrumentation, which is unrealistic for end-to-end latency estimation in complex systems.This paper presents LatenSeer, a modeling framework for estimating end-to-end latency distributions in microservice-based web applications. LatenSeer proposes novel data structures to accurately represent causal relationships between services, overcoming the drawbacks of simple dependency representations that fail to capture the complexity of microservices. LatenSeer leverages distributed tracing data to practically and accurately model end-to-end latency at scale. Our evaluation shows that LatenSeer predicts latency within a 5.35\% error, outperforming the state-of-the-art that has an error rate of more than 9.5\%.},
+  doi={10.1145/3620678.3624787},
+  booktitle={Proceedings of the 2023 ACM Symposium on Cloud Computing},
+  chapter={0}
+}
+
+@article{rayyan-384037986,
+  title={VAMP: Visual Analytics for Microservices Performance - Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing},
+  year={2024},
+  pages={1209–1218},
+  author={Traini, Luca and Leone, Jessica and Stilo, Giovanni and Di Marco, Antinisca},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3605098.3636069},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SAC '24},
+  keywords={microservices, distributed tracing, performance analysis},
+  abstract={Analysis of microservices' performance is a considerably challenging task due to the multifaceted nature of these systems. Each request to a microservices system might raise several Remote Procedure Calls (RPCs) to services deployed on different servers and/or containers. Existing distributed tracing tools leverage swimlane visualizations as the primary means to support performance analysis of microservices. These visualizations are particularly effective when it is needed to investigate individual end-to-end requests' performance behaviors. Still, they are substantially limited when more complex analyses are required, as when understanding the system-wide performance trends is needed.To overcome this limitation, we introduce vamp, an innovative visual analytics tool that enables, at once, the performance analysis of multiple end-to-end requests of a microservices system. vamp was built around the idea that having a wide set of interactive visualizations facilitates the analyses of the recurrent characteristics of requests and their relation w.r.t. the end-to-end performance behavior. Through an evaluation of 33 datasets from an established open-source microservices system, we demonstrate how vamp aids in identifying RPC execution time deviations with significant impact on end-to-end performance. Additionally, we show that vamp can support in pinpointing meaningful structural patterns in end-to-end requests and their relationship with microservice performance behaviors.},
+  doi={10.1145/3605098.3636069},
+  booktitle={Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing},
+  chapter={0}
+}
+
+@article{rayyan-384037987,
+  title={3MileBeach: A Tracer with Teeth - Proceedings of the ACM Symposium on Cloud Computing},
+  year={2021},
+  pages={458–472},
+  author={Zhang, Jun and Ferydouni, Robert and Montana, Aldrin and Bittman, Daniel and Alvaro, Peter},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3472883.3486986},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SoCC '21},
+  keywords={Application Tuning, Bug Finding, Chaos Engineering, Temporal Fault Injection, Tracing},
+  abstract={We present 3MileBeach, a tracing and fault injection platform designed for microservice-based architectures. 3Mile-Beach interposes on the message serialization libraries that are ubiquitous in this environment, avoiding the application code instrumentation that tracing and fault injection infrastructures typically require. 3MileBeach provides message-level distributed tracing at less than 50\% of the overhead of the state-of-the-art tracing frameworks, and fault injection that allows higher precision experiments than existing solutions. We measure the overhead of 3MileBeach as a tracer and its efficacy as a fault injector. We qualitatively measure its promise as a platform for tuning and debugging by sharing concrete use cases in the context of bottleneck identification, performance tuning, and bug finding. Finally, we use 3MileBeach to perform a novel type of fault injection - Temporal Fault Injection (TFI), which more precisely controls individual inter-service message flow with temporal prerequisites, and makes it possible to catch an entirely new class of fault tolerance bugs.},
+  doi={10.1145/3472883.3486986},
+  booktitle={Proceedings of the ACM Symposium on Cloud Computing},
+  chapter={0}
+}
+
+@article{rayyan-384037988,
+  title={Kubernetes Load-balancing and related network functions using P4 - Proceedings of the Symposium on Architectures for Networking and Communications Systems},
+  year={2022},
+  pages={133–135},
+  author={Jain, Nupur and Mohan, Vinoth Kumar Chandra and Singhai, Anjali and Chatterjee, Debashis and Daly, Dan},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3493425.3502768},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={ANCS '21},
+  keywords={IPU, K8S, PNA, Programmable Networks},
+  abstract={This paper highlights the use of the P4 language for the development of a Kubernetes load balancer and related network functions that address scale, security, and network performance requirements. Load balancers have multiple deployment scenarios from edge to data center clusters, including per-node application load distributions. A P4 data plane running on an Infrastructure Processing Unit (IPU) can serve as a highly performant, secure and flexible data plane for Container Network Interfaces (CNI) like Calico. Using P4, we can identify the packet headers and operator specific fields for load balancing with consistent service delivery across multi-cloud environments. Challenges like per flow monitoring, on-demand autoscaling and adding network policy ACLs (Access Control Lists) can be addressed with software and P4 data plane extensions on an IPU, eventually paving the path for modernized service mesh delivery.},
+  doi={10.1145/3493425.3502768},
+  booktitle={Proceedings of the Symposium on Architectures for Networking and Communications Systems},
+  chapter={0}
+}
+
