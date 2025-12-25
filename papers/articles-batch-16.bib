@@ -1,0 +1,108 @@
+@article{rayyan-384038079,
+  title={Reotina: an eBPF-Driven Observability Framework for 5G Networks - 2025 25th Asia-Pacific Network Operations and Management Symposium (APNOMS)},
+  year={2025},
+  month={9},
+  issn={2576-8565},
+  pages={1-6},
+  author={Kim, Jisu and Nam, Jaehyun},
+  keywords={5G mobile communication;Scalability;Microservice architectures;Real-time systems;HTTP;Performance...},
+  abstract={Fifth-generation ($\mathbf{5 G}$) mobile networks increasingly rely on containerized microservices and multi-interface configurations to meet the stringent performance, scalability, and flexibility demands of modern digital infrastructures. While these architectures support modular, high-performance deployments, they pose significant challenges for end-to-end observability, particularly in capturing control- and user-plane protocols such as NGAP, PFCP, and GTP-U. Existing monitoring solutions, predominantly optimized for HTTP traffic and dependent on sidecar-based service meshes, are ill-equipped for multi-cluster environments where traffic traverses secondary virtual interfaces provisioned by Multus CNI. We introduce Reotina, an eBPFbased observability framework that enables protocol-aware visibility in cloud-native 5 G environments. Reotina performs inkernel, interface-level traffic introspection and enriches packet data with Kubernetes context, operating transparently across multiple interfaces and clusters. By correlating protocol events with workload identity, it supports structured telemetry for performance analysis and operational insight. We evaluate Reotina in a Kubernetes-based, multi-cluster free5GC testbed, where it achieves full coverage of NGAP, PFCP, and GTP-U transactions with under 2% CPU overhead and sub-millisecond latency in cross-cluster session reconstruction. These results demonstrate that Reotina enables scalable, low-overhead observability for production-grade 5 G systems, effectively addressing key limitations of existing monitoring solutions.},
+  doi={10.23919/APNOMS67058.2025.11181403},
+  booktitle={2025 25th Asia-Pacific Network Operations and Management Symposium (APNOMS)},
+  chapter={0}
+}
+
+@article{rayyan-384038080,
+  title={A Statistical approach to Event Suppression in Cloud Environments - 2025 17th International Conference on COMmunication Systems and NETworks (COMSNETS)},
+  year={2025},
+  month={1},
+  issn={2155-2509},
+  pages={1347-1349},
+  author={Verma, Mudit and Kumar, Harshit and Moogi, Pratibha},
+  keywords={Measurement;Costs;Filtering;Heuristic algorithms;Pipelines;Noise;Dynamic scheduling;Telemetry;Obs...},
+  abstract={There is an exponential growth in observability data—including metrics, logs, traces, and events in modern cloud-native systems. Among these, events represent a specific type of telemetry data that often requires immediate attention, as they signal discrete occurrences such as anomalies, threshold breaches, or critical system changes. While comprehensive observability is essential for effective monitoring and troubleshooting, the sheer volume of event traffic can overwhelm operators, drain resources, and drive up operational costs. This paper introduces a dynamic rate-limiting algorithm tailored to suppress duplicate events, addressing the dual challenge of maintaining comprehensive observability while reducing noise. By dynamically adjusting event forwarding rates based on frequency patterns, the algorithm ensures critical anomalies are represented while suppressing redundant event traffic. Leveraging statistical measures and adaptive reset mechanisms, this approach optimizes event pipelines for efficiency without compromising diagnostic utility. We also demonstrate the algorithm’s effectiveness, achieving an 8.6x reduction in forwarded events while retaining actionable insights, paving the way for scalable and cost-effective event management in cloud-native environments.},
+  doi={10.1109/COMSNETS63942.2025.10885591},
+  booktitle={2025 17th International Conference on COMmunication Systems and NETworks (COMSNETS)},
+  chapter={0}
+}
+
+@article{rayyan-384038081,
+  title={Cloud-Native Observability of Telecom Applications},
+  year={2024},
+  month={4},
+  journal={Ericsson Technology Review},
+  issn={0014-0171},
+  volume={2024},
+  number={4},
+  pages={2-8},
+  author={Aelken, Jörg and Wallin, Johan and Deasy, Tadhg and Desbois, Vincent and Standar, Magnus},
+  keywords={Correlation;Reviews;Soft sensors;Ecosystems;Market research;Telecommunications;Telemetry;History;...},
+  abstract={Solutions that provide observability for cloud-native telecom applications must be able to handle the dynamic, decoupled and highly distributed nature of telecommunication application components in the cloud-native environment. This requires new approaches to collecting, storing and processing telemetry data using and advancing the de facto standard technologies from the cloud-native open-source ecosystem.},
+  doi={10.23919/ETR.2024.10759711},
+  chapter={0}
+}
+
+@article{rayyan-384038082,
+  title={Cloud Native Observability for an Enhanced Orchestration at the Telco Edge - ICC 2025 - IEEE International Conference on Communications},
+  year={2025},
+  month={6},
+  issn={1938-1883},
+  pages={886-891},
+  author={Matysiak, Piotr and Fajjari, Ilhem and Tarasiuk, Halina and Ziółkowski, Marcin},
+  keywords={Performance evaluation;6G mobile communication;Autonomous networks;5G mobile communication;Distri...},
+  abstract={As mobile networks advance, so do the use cases and quality demands they must meet, such as achieving “seven nines” reliability. Meeting these demands requires implementing intelligent and autonomous networks. Observability plays a crucial role in enabling data-driven Orchestration within this context. This paper presents Telco-Observer, an innovative solution tightly integrated with Management & Orchestration systems, designed to collect and provide efficient access to telemetry data across distributed cloud native edge environments. To the best of our knowledge, no existing solutions fully incorporate Observability at the Telco edge while supporting efficient Orchestration. Our performance evaluation demonstrates that Telco-Observer incurs minimal overhead while collecting a broad spectrum of telemetry signals and providing fast data access.},
+  doi={10.1109/ICC52391.2025.11162045},
+  booktitle={ICC 2025 - IEEE International Conference on Communications},
+  chapter={0}
+}
+
+@article{rayyan-384038083,
+  title={Advanced AI-Driven Automation for Smarter Networks: The Modern Observability Advantage},
+  year={2025},
+  journal={IEEE Communications Magazine},
+  issn={1558-1896},
+  pages={1-8},
+  author={Tzanettis, Ioannis and Kakkavas, Grigorios and Stylos, Alexandros and Mountakis, Gerasimos and Zafeiropoulos, Anastasios and Papavassiliou, Symeon},
+  keywords={Observability;Measurement;Telemetry;Monitoring;Data integration;Computer architecture;Anomaly det...},
+  abstract={Modern heterogeneous networks and distributed applications deployed across the computing continuum pose significant monitoring and management challenges due to their complexity and dynamic nature. Cloud-native observability has emerged as a powerful paradigm to overcome these challenges, enabling the extraction of knowledge and operational insights by combining information from metrics, logs, and traces. At the same time, advanced Artificial Intelligence (AI) techniques drive network automation toward Zero-Touch Network and Service Management (ZSM). In this work, we present FUSION, an integrated observability and analytics framework that unifies heterogeneous telemetry data and leverages AI-powered intelligence to extract knowledge, identify behavioral patterns, and increase automation. A conceptual architecture is detailed, standardizing heterogeneous data collection and fusion in a unified observability layer, while supporting the integration of advanced AI-based analytics pipelines. A prototype implementation demonstrates the use of representative AI-based methods for anomaly detection, root cause analysis, and intelligent orchestration.},
+  doi={10.1109/MCOM.001.2500256},
+  chapter={0}
+}
+
+@article{rayyan-384038084,
+  title={ - Bootstrapping Service Mesh Implementations with Istio: Build reliable, scalable, and secure microservices on Kubernetes with Service Mesh},
+  year={2023},
+  author={Rai, Anand},
+  url={https://ieeexplore-ieee-org.proxy-ub.rug.nl/document/10251187},
+  publisher={Packt Publishing},
+  abstract={A step-by-step guide to Istio Service Mesh implementation, with examples of complex and distributed workloads built using microservices architecture and deployed in Kubernetes Purchase of the print or Kindle book includes a free PDF eBookKey FeaturesLearn the design, implementation, and troubleshooting of Istio in a clear and concise formatGrasp concepts, ideas, and solutions that can be readily applied in real work environmentsSee Istio in action through examples that cover Terraform, GitOps, AWS, Kubernetes, and GoBook DescriptionIstio is a game-changer in managing connectivity and operational efficiency of microservices, but implementing and using it in applications can be challenging. This book will help you overcome these challenges and gain insights into Istio's features and functionality layer by layer with the help of easy-to-follow examples. It will let you focus on implementing and deploying Istio on the cloud and in production environments instead of dealing with the complexity of demo apps.  You'll learn the installation, architecture, and components of Istio Service Mesh, perform multi-cluster installation, and integrate legacy workloads deployed on virtual machines. As you advance, you'll understand how to secure microservices from threats, perform multi-cluster deployments on Kubernetes, use load balancing, monitor application traffic, implement service discovery and management, and much more. You’ll also explore other Service Mesh technologies such as Linkerd, Consul, Kuma, and Gloo Mesh. In addition to observing and operating Istio using Kiali, Prometheus, Grafana and Jaeger, you'll perform zero-trust security and reliable communication between distributed applications. After reading this book, you'll be equipped with the practical knowledge and skills needed to use and operate Istio effectively.What you will learnGet an overview of Service Mesh and the problems it solvesBecome well-versed with the fundamentals of Istio, its architecture, installation, and deploymentExtend the Istio data plane using WebAssembly (Wasm) and learn why Envoy is used as a data planeUnderstand how to use OPA Gatekeeper to automate Istio’s best practicesManage communication between microservices using IstioExplore different ways to secure the communication between microservicesGet insights into traffic flow in the Service MeshLearn best practices to deploy and operate Istio in production environmentsWho this book is forThe book is for DevOps engineers, SREs, cloud and software developers, sysadmins, and architects who have been using microservices in Kubernetes-based environments. It addresses challenges in application networking during microservice communications. Working experience on Kubernetes, along with knowledge of DevOps, application networking, security, and programming languages like Golang, will assist with understanding the concepts covered.},
+  booktitle={Bootstrapping Service Mesh Implementations with Istio: Build reliable, scalable, and secure microservices on Kubernetes with Service Mesh},
+  chapter={0}
+}
+
+@article{rayyan-384038086,
+  title={Resilient Cloud Native Architecture for Predictive Anomaly Detection in Industrial IoT with a Case Study on Securing Operational Technology Pipelines - 2025 International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT)},
+  year={2025},
+  month={9},
+  pages={01-07},
+  author={Hareram, Sruthi Erra},
+  keywords={Cloud computing;Image edge detection;Pipelines;Computer architecture;Cyber-physical systems;Real-...},
+  abstract={The Industrial Internet of Things (IIoT) and Operational Technology (OT) are becoming more and more connected. To keep up, we need strong, expandable networks that can identify problems right away and make predictions. Together, edge-to-cloud telemetry, human-in-the-loop AI, and continuous ML lifecycle management are used in this study to show a cloud-native design that can protect Industrial Control Systems (ICS). Azure Event Hubs are used to feed data with low latency, MLflow is used to track and retrain models, and Cyber-Physical Systems (CPS) input is used for adaptive anomaly detection. The suggested method works as shown by a real-life case study in a petroleum pipeline monitoring system. The system was able to identify anomalies 94.7% of the time, had 38.5% less detection delay than most edge-only models, and was up 22% more of the time. Using streaming feedback loops cut the time it took to reset the model to less than 30 minutes, which made it more adaptable in real time. These results indicate that cloud-native predictive models could be used in mission-critical OT systems. This would make them safe, scalable, and smart for use in Industry 4.0.},
+  doi={10.1109/ICICNCT66124.2025.11232578},
+  booktitle={2025 International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT)},
+  chapter={0}
+}
+
+@article{rayyan-384038087,
+  title={Rethinking Security Operations Centre Onboarding - 2021 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)},
+  year={2021},
+  month={6},
+  pages={1-9},
+  author={Onwubiko, Cyril},
+  keywords={Leadership;Automation;Ecosystems;Tools;Security;Computer security;Monitoring;CSOC;SOC;Cyber Onboa...},
+  abstract={Cyber security operations centres (CSOC) are an essential business differentiator for digital services. They perform the challenging tasks of monitoring digital services such that when an attack is detected against the monitored digital services, they can respond swiftly ensuring cyber incidents are appropriately managed through to recovery. To monitor business services, the CSOC must first on-board those business services onto their security monitoring and incident management platforms. This process of onboarding business services to CSOC's security monitoring and incident management platform is described as Cybersecurity Onboarding. Cybersecurity Onboarding is a specialist technical process of setting up and configuring digital business services to generate appropriate interaction telemetry, such as events, logs, messages, metrics, and observables. These telemetric indicators when correlated and analysed reveal whether the business service may have been compromised or not. In this paper we rethink the approach to onboarding services to CSOC. A new approach of cybersecurity onboarding that is cyclic, simpler, quicker, efficient, and cost optimised by leveraging cloud-native and cloud-enabled technologies is discussed.},
+  doi={10.1109/CyberSA52016.2021.9478245},
+  booktitle={2021 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)},
+  chapter={0}
+}
+
