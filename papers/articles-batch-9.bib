@@ -1,0 +1,113 @@
+@article{rayyan-384038013,
+  title={Towards Demystifying Intra-Function Parallelism in Serverless Computing - Proceedings of the Seventh International Workshop on Serverless Computing (WoSC7) 2021},
+  year={2021},
+  pages={42–49},
+  author={Kiener, Michael and Chadha, Mohak and Gerndt, Michael},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3493651.3493672},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={WoSC '21},
+  keywords={Container-as-a-Service, Cost, Function-as-a-Service, Parallel execution, Parallelization, Performance, Serverless},
+  abstract={Serverless computing offers a pay-per-use model with high elasticity and automatic scaling for a wide range of applications. Since cloud providers abstract most of the underlying infrastructure, these services work similarly to black-boxes. As a result, users can influence the resources allocated to their functions, but might not be aware that they have to parallelize them to profit from the additionally allocated virtual CPUs (vCPUs). In this paper, we analyze the impact of parallelization within a single function and container instance for AWS Lambda, Google Cloud Functions (GCF), and Google Cloud Run (GCR). We focus on compute-intensive workloads since they benefit greatly from parallelization. Furthermore, we investigate the correlation between the number of allocated CPU cores and vCPUs in serverless environments. Our results show that the number of available cores to a function/container instance does not always equal the number of allocated vCPUs. By parallelizing serverless workloads, we observed cost savings up to 81\% for AWS Lambda, 49\% for GCF, and 69.8\% for GCR.},
+  doi={10.1145/3493651.3493672},
+  booktitle={Proceedings of the Seventh International Workshop on Serverless Computing (WoSC7) 2021},
+  chapter={0}
+}
+
+@article{rayyan-384038014,
+  title={An experience report on the adoption of microservices in three Brazilian government institutions - Proceedings of the XXXII Brazilian Symposium on Software Engineering},
+  year={2018},
+  pages={32–41},
+  author={Luz, Welder and Agilar, Everton and de Oliveira, Marcos C\'{e}sar and de Melo, Carlos Eduardo R. and Pinto, Gustavo and Bonif\'{a}cio, Rodrigo},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3266237.3266262},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SBES '18},
+  keywords={experience report, lessons learned, microservice applications, monolithic applications},
+  abstract={Although monolithic applications are still the modus operandi of many software systems, the microservices architecture, which favors small and independent applications, is gaining increasing popularity. This is part due to its claimed benefits, which includes better scalability, productivity, and maintainability. However, little is known about how developers and architects perceive the benefits of migrating from monolithic applications to microservices, and what are the challenges towards achieving them. In this paper we discuss the motivation, benefits, and challenges related to the migration from monolithic enterprise architectures to a microservices based architecture. We report several lessons learned that arose from a two years process faced by three Brazilian Government Institutions. We also cross-validate these findings with a survey conducted with 13 practitioners in the studied companies. The results of our investigation highlight some evidence that the adoption of microservices brought several benefits for these institutions, such as (a) reducing development time and risks related to deployment activities and (b) increasing the opportunities to experiment with different technologies and development models (such as hackathons). However, our observations reveal that the adoption of microservices is still a challenging task, mainly because it not only demands the understanding of new techniques and tools, but it also increases the need to automate tasks related to software deployment and software monitoring. This study is particularly relevant for institutions interested in adopting a software architecture based on microservices, and we are currently sharing our experiences with other institutions.},
+  doi={10.1145/3266237.3266262},
+  booktitle={Proceedings of the XXXII Brazilian Symposium on Software Engineering},
+  chapter={0}
+}
+
+@article{rayyan-384038015,
+  title={Container Orchestration Honeypot: Observing Attacks in the Wild - Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses},
+  year={2023},
+  pages={381–396},
+  author={Spahn, Noah and Hanke, Nils and Holz, Thorsten and Kruegel, Christopher and Vigna, Giovanni},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3607199.3607205},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={RAID '23},
+  keywords={Docker, Kubernetes, containers, honeypot, vulnerability},
+  abstract={Containers, a mechanism to package software and its dependencies into a single artifact, have helped fuel the rapid pace of technological advancements in the last few years. However, it is not always clear what the potential security risk of moving to the cloud and container-based technologies is. In this paper, we investigate exposed container orchestration services on the Internet: how many there are, and the attacks against them. We considered three groups of container-based software: Docker, Kubernetes, and workflow tools. In a measurement study, we scanned the Internet to identify vulnerable container and container-orchestration services running on default ports. Considering the scan data, we then designed a high-interaction honeypot to reveal where attackers tend to strike and what is being done against exposed instances. The honeypot is based on container orchestration tools installed on Ubuntu servers, behind a carefully constructed gateway, and using the default ports. Our honeypot attracted attackers within minutes of launch. In total, we collected 94 days of attack data and extracted associated indicators of compromise (IOCs), which are provided to the research community to enable further insights. Our empirical study measures the risk associated with container and container orchestration systems exposed on the Internet. The assessment is performed by leveraging a novel design for a high-interaction honeypot. Using the observed data, we extract fresh insights into malicious tools, tactics, and procedures used against exposed host systems. In addition, we make available to the research community a rich dataset of unencrypted malicious traffic.},
+  doi={10.1145/3607199.3607205},
+  booktitle={Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses},
+  chapter={0}
+}
+
+@article{rayyan-384038016,
+  title={A Novel Framework for Cross-Cluster Scaling in Cloud-Native 5G NextGen Core},
+  year={2024},
+  month={9},
+  journal={FUTURE INTERNET},
+  issn={1999-5903},
+  volume={16},
+  number={9},
+  author={Dumitru-Guzu, Oana-Mihaela and Calin, Vladeanu and Kooij, Robert},
+  abstract={Cloud-native technologies are widely considered the ideal candidates for the future of vertical application development due to their boost in flexibility, scalability, and especially cost efficiency. Since multi-site support is paramount for 5G, we employ a multi-cluster model that scales on demand, shifting the boundaries of both horizontal and vertical scaling for shared resources. Our approach is based on the liquid computing paradigm, which has the benefit of adapting to the changing environment. Despite being a decentralized deployment shared across data centers, the 5G mobile core can be managed as a single cluster entity running in a public cloud. We achieve this by following the cloud-native patterns for declarative configuration based on Kubernetes APIs and on-demand resource allocation. Moreover, in our setup, we analyze the offloading of both the Open5GS user and control plane functions under two different peering scenarios. A significant improvement in terms of latency and throughput is achieved for the in-band peering, considering the traffic between clusters is ensured by the Liqo control plane through a VPN tunnel. We also validate three end-to-end network slicing use cases, showcasing the full 5G core automation and leveraging the capabilities of Kubernetes multi-cluster deployments and inter-service monitoring through the applied service mesh solution.},
+  doi={10.3390/fi16090325},
+  chapter={0}
+}
+
+@article{rayyan-384038017,
+  title={Network shortcut in data plane of service mesh with eBPF},
+  year={2024},
+  month={2},
+  journal={JOURNAL OF NETWORK AND COMPUTER APPLICATIONS},
+  issn={1084-8045},
+  volume={222},
+  author={Yang, Wanqi and Chen, Pengfei and Yu, Guangba and Zhang, Haibin and Zhang, Huxing},
+  abstract={In recent years, the adoption of the service mesh as a dedicated infrastructure layer to support cloud-native systems has gained significant popularity. Service meshes involve the incorporation of proxies to handle communication between microservices, thereby speeding up the development and deployment of microservice applications. However, the use of service meshes also increases the request latency because they elongate the packet transmission between services. After investigating the transmission path of packets in a representative service mesh Istio, we observed that the service mesh dedicates approximately 25\% of its time to packet transmission in the Linux kernel network stack. To shorten this process, we propose a non-intrusive solution that enables packets to bypass the kernel network stack through the implementation of socket redirection and tc (traffic control) redirection with eBPF (extended Berkeley Packet Filter). We also conduct comprehensive experiments on the widely-used Istio. The evaluation results show that our approach can significantly reduce the request latency by up to 21\%. Furthermore, our approach decreases CPU usage by 1.73\% and reduces memory consumption by approximately 0.98\% when compared to the original service mesh implementation.},
+  doi={10.1016/j.jnca.2023.103805},
+  chapter={0}
+}
+
+@article{rayyan-384038018,
+  title={Enhancing cloud native security: a knowledge graph approach for securing container runtimes},
+  year={2025},
+  month={9},
+  journal={CLUSTER COMPUTING-THE JOURNAL OF NETWORKS SOFTWARE TOOLS AND APPLICATIONS},
+  issn={1386-7857},
+  volume={28},
+  number={12},
+  author={Eldjou, Amina and Kitouni, Ilham and Benmounah, Zakaria and Bennacer, Samir},
+  abstract={Security Operations Centres (SOCs) face alert fatigue and undetected threats in cloud-native environments, as traditional SIEM systems struggle to analyze high-volume logs from containerized microservices. These threats often remain hidden during routine monitoring, only surfacing during prolonged investigations, which delays mitigation and increases operational risks. Semantic technologies have shown promise for transforming heterogeneous data into contextualized insights; however, traditional approaches falter when aggregating heterogeneous sources. This work tackles this gap by proposing a hybrid knowledge graph (KG) combining rule-based detection with KG-assisted investigation, leveraging kernel-level telemetry and the Elastic Common Schema (ECS). Our experimental validation, conducted within the investigation phase of a cloud-native SOC, demonstrates a 20\textbackslash{}documentclass{[}12pt]\{minimal\} \textbackslash{}usepackage\{amsmath\} \textbackslash{}usepackage\{wasysym\} \textbackslash{}usepackage\{amsfonts\} \textbackslash{}usepackage\{amssymb\} \textbackslash{}usepackage\{amsbsy\} \textbackslash{}usepackage\{mathrsfs\} \textbackslash{}usepackage\{upgreek\} \textbackslash{}setlength\{\textbackslash{}oddsidemargin\}\{-69pt\} \textbackslash{}begin\{document\}\$\$\textbackslash{}\%\$\$\textbackslas h{}end\{document\} reduction in time latency for contextualized threat analysis compared to traditional SIEM workflows, while enabling complex cross-layer queries that uncover relationships previously unattainable with rule-based methods.},
+  doi={10.1007/s10586-025-05531-6},
+  chapter={0}
+}
+
+@article{rayyan-384038019,
+  title={On translating monitoring insights into a cloud-native execution environment},
+  year={2025},
+  journal={SERVICE ORIENTED COMPUTING AND APPLICATIONS},
+  issn={1863-2386},
+  author={Kosinska, Joanna and Piechaczek, Wojciech and Sakol, Kinga and Szczurek, Michal and Walat, Krystian},
+  abstract={Software systems are getting more advanced, resulting in the need for automated management. It especially applies to Cloud-native applications consisting of numerous microservices. Typically, such a service generates large amounts of logs and system metrics. Manually analyzing them is tedious and results in a delayed reaction. To overcome the obstacles, as our unique contribution we propose translating the metrics into objects to allow for rule-based management and meanwhile benefit from object-oriented programming. By leveraging metrics data, we can define rules for the automatic handling of certain situations. Our methodology is based on an experimental evaluation of the proposed concept. We named our proposal Hephaestus. We also present the reasoning behind its design and show a real-life scenario in which Hephaestus can be helpful. In conclusion, Hephaestus introduces a new telemetry objects layer in a Cloud-native environment. In this layer, the telemetry data exist as objects. These objects are understandable by various software that, based on them, can enhance the insights.},
+  doi={10.1007/s11761-025-00477-4},
+  chapter={0}
+}
+
+@article{rayyan-384038020,
+  title={Aquila: Efficient In-Kernel System Call Telemetry for Cloud-Native Environments},
+  year={2025},
+  month={10},
+  journal={SENSORS},
+  volume={25},
+  number={21},
+  author={Shin, Juyong and Kim, Jisu and Nam, Jaehyun},
+  abstract={System call telemetry is essential for understanding runtime behavior in cloud-native infrastructures, but existing eBPF-based monitors suffer from high per-event overhead, unreliable delivery under load, and limited context for correlating multi-step activities. These issues reduce scalability, create blind spots in telemetry streams, and complicate the analysis of complex workload behaviors. This work presents Aquila, a lightweight telemetry framework that emphasizes efficiency, reliability, and semantic fidelity. Aquila employs a dual-path kernel pipeline that separates fixed-size metadata from variable-length attributes, reducing serialization costs and enabling high-throughput event processing. It introduces priority-aware buffering and explicit drop detection to retain loss-sensitive events while providing visibility into overload conditions. In the user space, kernel traces are enriched with Kubernetes metadata, mapping low-level system calls to pods, containers, and namespaces. Evaluation under representative workloads shows that Aquila improves scalability, reduces event loss, and enhances the semantic completeness of system call telemetry compared with existing approaches.},
+  doi={10.3390/s25216511},
+  chapter={0}
+}
+
