@@ -53,4 +53,4 @@ jobs:
 
       - name: Screen added papers iteration ${{ matrix.iteration }}
         run: |
-          copilot -p "follow the prompt.md file to decide whether to accept or reject the articles' abstracts in ${{ steps.new_bibs.outputs.files }}"
+          copilot --model gpt-5-mini -p "follow the prompt.md file to decide whether to accept or reject the articles' abstracts in ${{ steps.new_bibs.outputs.files }}"
