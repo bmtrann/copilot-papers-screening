@@ -1,0 +1,126 @@
+@article{rayyan-384037997,
+  title={Novel Contract-based Runtime Explainability Framework for End-to-End Ensemble Machine Learning Serving - Proceedings of the IEEE/ACM 3rd International Conference on AI Engineering - Software Engineering for AI},
+  year={2024},
+  pages={234–244},
+  author={Nguyen, Minh-Tri and Truong, Hong-Linh and Truong-Huu, Tram},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3644815.3644964},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={CAIN '24},
+  keywords={ML explainability engineering, ML contract, SLA management, ensemble ML, ML serving},
+  abstract={The growing complexity of end-to-end Machine Learning (ML) serving across the edge-cloud continuum has raised the necessity for runtime explainability to support service optimizations, transparency, and trustworthiness. That involves many challenges in managing ML service quality and engineering runtime explainability based on ML service contracts. Currently, consumers use ML services almost as a black box with insufficient explainability for not only inference decisions but also other contractual aspects, such as data/service quality and costs. The generic explainability for ML models is inadequate to explain the runtime ML usage for individual consumers. Moreover, ML-specific metrics have not been addressed in existing service contracts. In this work, we introduce a novel contract-based runtime explainability framework for end-to-end ensemble ML serving. The framework provides a comprehensive engineering toolset, including explainability constraints in ML contracts, report schemas, and interactions between ML consumers and the components of the ML serving for evaluating service quality with contract-based explanations. We develop new monitoring probes to measure ML-specific metrics on data quality, inference confidence, inference accuracy, and capture runtime ML usage. Finally, we present essential quality analyses via an observation agent. That interprets ML inferences and evaluates contributions of ML inference microservices, assisting ML serving optimization. The agent also integrates ML algorithms for detecting relations among metrics, supporting constraint developments. We demonstrate our work with two real-world applications for malware and object detection.},
+  doi={10.1145/3644815.3644964},
+  booktitle={Proceedings of the IEEE/ACM 3rd International Conference on AI Engineering - Software Engineering for AI},
+  chapter={0}
+}
+
+@article{rayyan-384037998,
+  title={MiSeRTrace: Kernel-level Request Tracing for Microservice Visibility - Companion of the 2022 ACM/SPEC International Conference on Performance Engineering},
+  year={2022},
+  pages={77–80},
+  author={V, Thrivikraman and Dixit, Vishnu R. and S, Nikhil Ram and Gowda, Vikas K. and Vasudevan, Santhosh Kumar and Kalambur, Subramaniam},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3491204.3527462},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={ICPE '22},
+  keywords={kernel tracing, microservice, misertrace, request tracing, thread state model},
+  abstract={With the evolution of microservice applications, the underlying architectures have become increasingly complex compared to their monolith counterparts. This mainly brings in the challenge of observability. By providing a deeper understanding into the functioning of distributed applications, observability enables improving the performance of the system by obtaining a view of the bottlenecks in the implementation. The observability provided by currently existing tools that perform dynamic tracing on distributed applications is limited to the user-space and requires the application to be instrumented to track request flows. In this paper, we present a new open-source framework MiSeRTrace that can trace the end-to-end path of requests entering a microservice application at the kernel space without requiring instrumentation or modification of the application. Observability at the comprehensiveness of the kernel space allows breaking down of various steps in activities such as network transfers and IO tasks, thus enabling root cause based performance analysis and accurate identification of hotspots. MiSeRTrace supports tracing user-enabled kernel events provided by frameworks such as bpftrace or ftrace and isolates kernel activity associated with each application request with minimal overheads. We then demonstrate the working of the solution with results on a benchmark microservice application.},
+  doi={10.1145/3491204.3527462},
+  booktitle={Companion of the 2022 ACM/SPEC International Conference on Performance Engineering},
+  chapter={0}
+}
+
+@article{rayyan-384037999,
+  title={Microservices-based systems visualization: student research abstract - Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing},
+  year={2022},
+  pages={1460–1464},
+  author={Abdelfattah, Amr S.},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3477314.3506963},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SAC '22},
+  keywords={architecture reconstruction, architecture visualization, augmented reality, microservices traceability, microservices visualization},
+  abstract={The evolution of decentralized microservice-based systems is challenging. These challenges are classified into static and dynamic categories. Regarding the static perspective, documenting and visualizing the fluid application topology is something few have been able to accomplish. Building an architecture map of services design is a complicated task in its interpretation rather than construction. Therefore, the system-centric and up-to-date view became essential for such distributed systems. The dynamic perspective considers the process of investigation and service path detection. Therefore performing root cause analysis is a burdening task; such that tracing data is needed to be put in the right context to facilitate the investigation. Moreover, visualizing these traces over the traditional visualization techniques couldn't be feasible with the large number of microservices involved in the system. This paper proposes a visualization concept for microservices-based systems using the Augmented Reality (AR) technique, which merges these static and dynamic behaviors into a single centric view. In addition, we challenge the difficulty related to tracing and debugging an issue in such distributed systems. This concept is designed to work as a dynamic documentation and traceability platform for these systems. A proof of concept and a research study are implemented to show the viability and success of this proposal.},
+  doi={10.1145/3477314.3506963},
+  booktitle={Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing},
+  chapter={0}
+}
+
+@article{rayyan-384038000,
+  title={Granular Resource Demand Heterogeneity - Proceedings of the 2025 Workshop on Hot Topics in Operating Systems},
+  year={2025},
+  pages={187–194},
+  author={Liang, Yizhuo and Govindan, Ramesh and Park, Seo Jin},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3713082.3730379},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={HotOS '25},
+  keywords={cloud computing, distributed systems, granular computing, profiling, server-less},
+  abstract={Granular resource heterogeneity refers to the phenomenon in which small computational units within or across applications exhibit distinct resource usage patterns. Traditional resource management in shared clusters lumps monolithic applications into coarse categories, overlooking smaller execution phases that differ in resource demands.We introduce hiresperf, an extensible profiler that investigates resource usage at 10-microsecond intervals attributed to each function invocation, with a low overhead. We show that using hiresperf for either offline analysis or real-time monitoring can exhibit the granular resource heterogeneity without manually decomposing applications for profiling. Armed with the fine-grained insights, resource managers, batch schedulers, and serverless runtimes can proactively schedule and migrate tasks to minimize interference and boost utilization at the same time.},
+  doi={10.1145/3713082.3730379},
+  booktitle={Proceedings of the 2025 Workshop on Hot Topics in Operating Systems},
+  chapter={0}
+}
+
+@article{rayyan-384038001,
+  title={Characterizing Microservice Dependency and Performance: Alibaba Trace Analysis - Proceedings of the ACM Symposium on Cloud Computing},
+  year={2021},
+  pages={412–426},
+  author={Luo, Shutian and Xu, Huanle and Lu, Chengzhi and Ye, Kejiang and Xu, Guoyao and Zhang, Liping and Ding, Yu and He, Jian and Xu, Chengzhong},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3472883.3487003},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SoCC '21},
+  abstract={Loosely-coupled and light-weight microservices running in containers are replacing monolithic applications gradually. Understanding the characteristics of microservices is critical to make good use of microservice architectures. However, there is no comprehensive study about microservice and its related systems in production environments so far. In this paper, we present a solid analysis of large-scale deployments of microservices at Alibaba clusters. Our study focuses on the characterization of microservice dependency as well as its runtime performance. We conduct an in-depth anatomy of microservice call graphs to quantify the difference between them and traditional DAGs of data-parallel jobs. In particular, we observe that microservice call graphs are heavy-tail distributed and their topology is similar to a tree and moreover, many microservices are hot-spots. We reveal three types of meaningful call dependency that can be utilized to optimize microservice designs. Our investigation on microservice runtime performance indicates most microservices are much more sensitive to CPU interference than memory interference. To synthesize more representative microservice traces, we build a mathematical model to simulate call graphs. Experimental results demonstrate our model can well preserve those graph properties observed from Alibaba traces.},
+  doi={10.1145/3472883.3487003},
+  booktitle={Proceedings of the ACM Symposium on Cloud Computing},
+  chapter={0}
+}
+
+@article{rayyan-384038002,
+  title={Cloud-Scale Runtime Verification of Serverless Applications - Proceedings of the ACM Symposium on Cloud Computing},
+  year={2021},
+  pages={92–107},
+  author={Alpernas, Kalev and Panda, Aurojit and Ryzhyk, Leonid and Sagiv, Mooly},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3472883.3486977},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={SoCC '21},
+  abstract={Serverless platforms aim to simplify the deployment, scaling, and management of cloud applications. Serverless applications are inherently distributed, and are executed using shortlived ephemeral processes. The use of short-lived ephemeral processes simplifies application scaling and management, but also means that existing approaches to monitoring distributed systems and detecting bugs cannot be applied to serverless applications. In this paper we propose Watchtower, a framework that enables runtime monitoring of serverless applications. Watchtower takes program properties as inputs, and can detect cases where applications violate these properties. We design Watchtower to minimize application changes, and to scale at the same rate as the application. We achieve the former by instrumenting libraries rather than application code, and the latter by structuring Watchtower as a serverless application. Once a bug is found, developers can use the Watchtower debugger to identify and address the root cause of the bug.},
+  doi={10.1145/3472883.3486977},
+  booktitle={Proceedings of the ACM Symposium on Cloud Computing},
+  chapter={0}
+}
+
+@article{rayyan-384038003,
+  title={The Kaiju project: enabling event-driven observability - Proceedings of the 14th ACM International Conference on Distributed and Event-Based Systems},
+  year={2020},
+  pages={85–96},
+  author={Scrocca, Mario and Tommasini, Riccardo and Margara, Alessandro and Valle, Emanuele Della and Sakr, Sherif},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3401025.3401740},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={DEBS '20},
+  keywords={event stream processing, event-based systems, observability, orchestration systems},
+  abstract={Microservices architectures are getting momentum. Even small and medium-size companies are migrating towards cloud-based distributed solutions supported by lightweight virtualization techniques, containers, and orchestration systems. In this context, understanding the system behavior at runtime is critical to promptly react to errors. Unfortunately, traditional monitoring techniques are not adequate for such complex and dynamic environments. Therefore, a new challenge, namely observability, emerged from precise industrial needs: expose and make sense of the system behavior at runtime. In this paper, we investigate observability as a research problem. We discuss the benefits of events as a unified abstraction for metrics, logs, and trace data, and the advantages of employing event stream processing techniques and tools in this context. We show that an event-based approach enables understanding the system behavior in near real-time more effectively than state-of-the-art solutions in the field. We implement our model in the Kaiju system and we validate it against a realistic deployment supported by a software company.},
+  doi={10.1145/3401025.3401740},
+  booktitle={Proceedings of the 14th ACM International Conference on Distributed and Event-Based Systems},
+  chapter={0}
+}
+
+@article{rayyan-384038004,
+  title={LongTale: Toward Automatic Performance Anomaly Explanation in Microservices - Proceedings of the 2022 ACM/SPEC on International Conference on Performance Engineering},
+  year={2022},
+  pages={5–16},
+  author={Li, Richard and Du, Min and Wang, Zheng and Chang, Hyunseok and Mukherjee, Sarit and Eide, Eric},
+  url={https://doi-org.proxy-ub.rug.nl/10.1145/3489525.3511675},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  series={ICPE '22},
+  keywords={cross-layer tracing, performance analysis, tail latency},
+  abstract={Performance troubleshooting is notoriously difficult for distributed microservices-based applications. A typical root-cause diagnosis for performance anomaly by an analyst starts by narrowing down the scope of slow services, investigates into high-level performance metrics or available logs in the slow components, and finally drills down to an actual cause. This process can be long, tedious, and sometimes aimless due to the lack of domain knowledge and the sheer number of possible culprits. This paper introduces a new machine-learning-driven performance analysis system called LongTale that automates the troubleshooting process for latency-related performance anomalies to facilitate the root cause diagnosis and explanation. LongTale builds on existing application-layer tracing in two significant aspects. First, it stitches application-layer traces with corresponding system stack traces, which enables more informative root-cause analysis. Second, it utilizes a novel machine-learning-driven analysis that feeds on the combined data to automatically uncover the most likely contributing factor(s) for given performance slowdown. We demonstrate how LongTale can be utilized in different scenarios, including abnormal long-tail latency explanation and performance interference analysis.},
+  doi={10.1145/3489525.3511675},
+  booktitle={Proceedings of the 2022 ACM/SPEC on International Conference on Performance Engineering},
+  chapter={0}
+}
+
