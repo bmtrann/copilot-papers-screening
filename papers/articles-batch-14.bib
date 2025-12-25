@@ -1,0 +1,108 @@
+@article{rayyan-384038062,
+  title={A Data-Centric Approach to Distributed Tracing - 2019 IEEE International Conference on Cloud Computing Technology and Science (CloudCom)},
+  year={2019},
+  month={12},
+  issn={2330-2186},
+  pages={209-216},
+  author={Popa, Nicolae Marian and Oprescu, Ana},
+  keywords={Couplings;Cloud computing;Instruments;Buildings;Microservice architectures;Distributed databases;...},
+  abstract={Modern applications are often implemented as distributed systems consisting of multiple application layers and spread across many machines. Monitoring and diagnosing are fundamental challenges of such systems, and many solutions have been proposed. They all aim to abstract the distributed nature and offer a concise overview of the system. Distributed logging, monitoring and tracing solutions help with root cause analysis or assessing the performance of the system. In data processing situations, data is the main driver and it should be treated accordingly. Microservices are often used to implement highly distributed data processing systems, so troubleshooting from a data point of view is also difficult. Data should be monitored and traced across machines and applications in order to get reliable insights into how the data is stored and processed. However, existing approaches to distributed tracing are based on tracing requests that are propagated throughout the system instead on their content. In this work we take a data-centric perspective to tracing and data processing to investigate how content can be traced in a distributed system. We evaluate existing tracing approaches to see if they can be extended to the content itself, then we take into consideration new ones. We implement three different approaches to data-centric distributed tracing in a highly distributed data processing system built using microservices and discuss their advantages and disadvantages.},
+  doi={10.1109/CloudCom.2019.00039},
+  booktitle={2019 IEEE International Conference on Cloud Computing Technology and Science (CloudCom)},
+  chapter={0}
+}
+
+@article{rayyan-384038063,
+  title={Methodology for the Organization and Application of Satellite Telemetry Data Based on Cloud Database - 2024 10th International Conference on Computer and Communications (ICCC)},
+  year={2024},
+  month={12},
+  issn={2837-7109},
+  pages={544-550},
+  author={Xiao, Binhan and Sun, Xiaojuan and Ni, Yongquan and Yu, Yue and Mou, Wenhao and Yu, Jie},
+  keywords={Space vehicles;Sharding;Satellites;Databases;Organizations;Real-time systems;Orbits;Sensors;Telem...},
+  abstract={As the space industry in China experiences rapid growth, the number of satellites in orbit is steadily increasing. Satellites collect various physical and environmental parameters via onboard sensors, collectively known as satellite telemetry data. These data are crucial for real-time monitoring of satellite conditions and hold significant value for operational assessment and maintenance. Given that satellites can remain operational for up to a decade, the volume of telemetry data generated is substantial. To address the challenges of scalable storage and timely query performance for large-scale telemetry data, this paper proposes an organization and application method based on a cloud-native time-series database. The proposed method employs multi-satellite and multi-parameter partitioning and data sharding methods, combined with summary storage method to achieve large-scale telemetry data storage. Additionally, it employs a combination of parallel and summary queries to ensure rapid data query. The Lindorm time-series database is selected for testing and validation. The results show that the proposed method has greatly enhanced both the storage and query efficiency of satellite telemetry data and the query latency for three typical telemetry data application scenarios has been reduced to the second level.},
+  doi={10.1109/ICCC62609.2024.10942064},
+  booktitle={2024 10th International Conference on Computer and Communications (ICCC)},
+  chapter={0}
+}
+
+@article{rayyan-384038064,
+  title={Using Distributed Tracing to Identify Inefficient Resources Composition in Cloud Applications - 2021 IEEE 10th International Conference on Cloud Networking (CloudNet)},
+  year={2021},
+  month={11},
+  pages={40-47},
+  author={Cass&#x00E9 and , Cl&#x00E9 and ment and Berthou, Pascal and Owezarski, Philippe and Josset, S&#x00E9 and bastien},
+  keywords={Measurement;Cloud computing;Adaptation models;Computational modeling;Ecosystems;Microservice arch...},
+  abstract={Cloud-Applications are the new industry standard way of designing Web-Applications. With Cloud Computing, Applications are usually designed as microservices, and developers can take advantage of thousands of such existing microservices, involving several hundred of cross-component communications on different physical resources.Microservices orchestration (as Kubernetes) is an automatic process, which manages each component lifecycle, and notably their allocation on the different resources of the cloud infrastructure. Whereas such automatic cloud technologies ease development and deployment, they nevertheless obscure debugging and performance analysis. In order to gain insight on the composition of services, distributed tracing recently emerged as a way to get the decomposition of the activity of each component within a cloud infrastructure. This paper aims at providing methodologies and tools (leveraging state-of-the-art tracing) for getting a wider view of application behaviours, especially focusing on application performance assessment.In this paper, we focus on using distributed traces and allocation information from microservices to model their dependencies as a hierarchical property graph. By applying graph rewriting operations, we managed to project and filter communications observed between microservices at higher abstraction layers like the machine nodes, the zones or regions. Finally, in this paper we propose an implementation of the model running on a microservices shopping application deployed on a Zonal Kubernetes cluster monitored by OpenTelemetry traces. We propose using the flow hierarchy metric on the graph model to pinpoint cycles that reveal inefficient resource composition inducing possible performance issues and economic waste.},
+  doi={10.1109/CloudNet53349.2021.9657140},
+  booktitle={2021 IEEE 10th International Conference on Cloud Networking (CloudNet)},
+  chapter={0}
+}
+
+@article{rayyan-384038065,
+  title={A Comparison of Distributed Tracing Tools in Serverless Applications - 2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)},
+  year={2023},
+  month={7},
+  issn={2642-6587},
+  pages={98-105},
+  author={Eder, Christina and Winzinger, Stefan and Lichtenthäler, Robin},
+  keywords={Computer languages;Runtime;Costs;Service-oriented systems engineering;Computational modeling;Inst...},
+  abstract={Serverless computing can favor the emergence of complex and error-prone applications. In order to gain observability in such applications, distributed tracing can be used. However, as serverless computing relies on the pay-per-use billing model, utilizing distributed tracing tools can have a noticeable impact on the resulting costs. Therefore, this paper investigates the impact of distributed tracing in serverless applications by exploring and comparing the efficiency characteristics of three selected distributed tracing tools - Zipkin, OpenTelemetry, and SkyWalking. In particular, the runtime, the memory usage, and the initialization duration were examined by benchmarking AWS Lambda function invocations. In the experiments, Zipkin imposed the lowest runtime overhead with an average of 10.73 %, while SkyWalking introduced the highest overhead with an average runtime overhead of 50.67 %. OpenTelemetry added 24.19 % additional runtime. Besides runtime overheads, significantly higher memory usage and initialization durations were detected for all tools. Therefore, the results suggest that distributed tracing can significantly impact the efficiency of serverless applications. Nevertheless, differences could be observed concerning tracing mechanisms and use cases. This helps developers to carefully select the most suitable tracing tool considering factors such as runtime overhead, memory usage, and initialization durations.},
+  doi={10.1109/SOSE58276.2023.00018},
+  booktitle={2023 IEEE International Conference on Service-Oriented System Engineering (SOSE)},
+  chapter={0}
+}
+
+@article{rayyan-384038066,
+  title={Demo: GitOps-Based Automation for Distributed NFs Reconfiguration in Cloud-Native O-RAN - 2025 IEEE 33rd International Conference on Network Protocols (ICNP)},
+  year={2025},
+  month={9},
+  issn={2643-3303},
+  pages={1-3},
+  author={Mafeni, Vitumbiko and Ta, Phuong Bac and Kim, Younghan},
+  keywords={Automation;Runtime;Protocols;Open RAN;Real-time systems;Telemetry;Noise measurement;Reliability;S...},
+  abstract={O-RAN disaggregation introduces flexibility in deploying Central Units (CUs) and Distributed Units (DUs) as independent network functions (NFs) connected via midhaul (F1 interface). In cloud-native deployments, multiple CU instances may coexist across clusters, each with varying compute load and network distance. In current practice, CU–DU associations are typically static and do not adapt to changing runtime conditions, making it difficult to apply consistent, timely configuration changes when a CU becomes overloaded. This demo presents a GitOps-based automation framework for runtime reconfiguration of distributed NFs in cloud-native O-RAN. The framework continuously collects NF telemetry and evaluates reconfiguration triggers, applying declarative updates via GitOps workflows to ensure consistency, traceability, and rapid propagation across clusters. As an illustrative scenario, we demonstrate CU–DU coordination under compute stress: when a CU instance becomes overloaded, the system automatically initiates reconfiguration or DU reassociation to an alternative CU. During the demo, attendees will observe live telemetry, configuration commits, and protocol traces showing CU-DU reassociation in response to induced load, illustrating a practical realization of automated NF reconfiguration in cloud-native O-RAN.},
+  doi={10.1109/ICNP65844.2025.11192324},
+  booktitle={2025 IEEE 33rd International Conference on Network Protocols (ICNP)},
+  chapter={0}
+}
+
+@article{rayyan-384038067,
+  title={Semantic In-Band Network Telemetry for Low Bandwidth Overhead and High-Accuracy Monitoring - IEEE INFOCOM 2025 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)},
+  year={2025},
+  month={5},
+  issn={2833-0587},
+  pages={1-2},
+  author={Yeom, Hojin and Lee, Dongjin and Ko, Haneul},
+  keywords={6G mobile communication;Accuracy;Conferences;Semantics;Autoencoders;Bandwidth;Feature extraction;...},
+  abstract={In-Band network telemetry (INT) offers fine-grained visibility by embedding per-packet monitoring data, which is essential for detecting anomalies in future 6G and cloud-native networks. However, naively collecting many telemetry items can cause severe traffic overhead, risking congestion and reduced network performance. To mitigate this, we propose semantic in-band network telemetry (SINT). SINT utilizes an autoencoder whose loss function is weighted according to each telemetry item's importance to anomaly detection. This enables selective compression of critical telemetry data at the data plane, significantly reducing traffic overhead while preserving detection accuracy. Experimental results on real-world mobile network traces show that SINT achieves an 87.5% reduction in traffic overhead with a 4% drop in accuracy.},
+  doi={10.1109/INFOCOMWKSHPS65812.2025.11152986},
+  booktitle={IEEE INFOCOM 2025 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)},
+  chapter={0}
+}
+
+@article{rayyan-384038068,
+  title={ - Cloud Native with Kubernetes: Deploy, configure, and run modern cloud native applications on Kubernetes},
+  year={2021},
+  author={Raul, Alexander},
+  url={https://ieeexplore-ieee-org.proxy-ub.rug.nl/document/10162922},
+  publisher={Packt Publishing},
+  abstract={Harness Kubernetes’ extensibility to deploy modern patterns and learn to effectively handle production issuesKey FeaturesBuild and run efficient cloud-native applications on Kubernetes using industry best practicesOperate Kubernetes in a production environment, troubleshoot clusters, and address security concernsDeploy cutting-edge Kubernetes patterns such as service mesh and serverless to your clusterBook DescriptionKubernetes is a modern cloud native container orchestration tool and one of the most popular open source projects worldwide. In addition to the technology being powerful and highly flexible, Kubernetes engineers are in high demand across the industry. This book is a comprehensive guide to deploying, securing, and operating modern cloud native applications on Kubernetes. From the fundamentals to Kubernetes best practices, the book covers essential aspects of configuring applications. You’ll even explore real-world techniques for running clusters in production, tips for setting up observability for cluster resources, and valuable troubleshooting techniques. Finally, you’ll learn how to extend and customize Kubernetes, as well as gaining tips for deploying service meshes, serverless tooling, and more on your cluster. By the end of this Kubernetes book, you’ll be equipped with the tools you need to confidently run and extend modern applications on Kubernetes.What you will learnSet up Kubernetes and configure its authenticationDeploy your applications to KubernetesConfigure and provide storage to Kubernetes applicationsExpose Kubernetes applications outside the clusterControl where and how applications are run on KubernetesSet up observability for KubernetesBuild a continuous integration and continuous deployment (CI/CD) pipeline for KubernetesExtend Kubernetes with service meshes, serverless, and moreWho this book is forThis book is for developers, architects, DevOps engineers, or anyone interested in developing and managing cloud-native applications. Those already running cloud applications and looking for a better way to manage their platform or others interested in a career change given the recent popularity of Kubernetes will also find this book helpful. Some familiarity with cloud computing, containers and DevOps is required, but no prior knowledge of building production applications using Kubernetes is needed to get started with this book.},
+  booktitle={Cloud Native with Kubernetes: Deploy, configure, and run modern cloud native applications on Kubernetes},
+  chapter={0}
+}
+
+@article{rayyan-384038070,
+  title={5GC-Observer: a Non-intrusive Observability Framework for Cloud Native 5G System - NOMS 2023-2023 IEEE/IFIP Network Operations and Management Symposium},
+  year={2023},
+  month={5},
+  issn={2374-9709},
+  pages={1-10},
+  author={Khichane, Abderaouf and Fajjari, Ilhem and Aitsaadi, Nadjib and Gueroui, Mourad},
+  keywords={Degradation;5G mobile communication;Statistical analysis;Telecommunication traffic;Quality of ser...},
+  abstract={Telco stakeholders are developing a deeper understanding of cloud native technologies and adopting them faster than few years ago. It is undeniable that migrating legacy telco applications to microservice-based architectures accelerates and facilitates the development of new network services while offering a high level of granularity. However, cloud native raises new operational challenges. In order to achieve an efficient management of network services, new solutions are required to monitor and track widely distributed cloud native network functions while considering their specificity. In this paper, we propose an innovative framework, 5GC-Observer, for the observability of cloud native 5G network services. To the best of our knowledge, no such a solution has been found to date. To achieve its goal, 5GC-Observer relies on the eBPF technology to monitor the network traffic circulating between the 5G core components and report telemetry data. Besides, we leverage a statistical method to detect Quality of Service degradation based on reported telemetry data. Such an approach highlights the richness of the data acquired by our solution and its capability to detect unexpected network-related anomalies. The latter are not detectable through standard observability solutions. Performance evaluation shows that our solution generates low overhead while giving insight into the 5G core system and its internal and external exchanges.},
+  doi={10.1109/NOMS56928.2023.10154433},
+  booktitle={NOMS 2023-2023 IEEE/IFIP Network Operations and Management Symposium},
+  chapter={0}
+}
+
