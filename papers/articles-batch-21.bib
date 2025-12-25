@@ -1,0 +1,109 @@
+@article{rayyan-384038122,
+  title={Technical Middleware Microservice Orchestration and Fault-Tolerant Mechanism Algorithms for Containerized Deployment - 2024 IEEE 6th International Conference on Civil Aviation Safety and Information Technology (ICCASIT)},
+  year={2024},
+  month={10},
+  pages={1611-1616},
+  author={Dai, Haoqi and Liu, Shaoguang and Liu, Bo and Fan, Zhongkai and Wang, Jinhe},
+  keywords={Fault tolerance;Machine learning algorithms;Scheduling algorithms;Heuristic algorithms;Fault tole...},
+  abstract={Due to the containerized deployment environment, microservice orchestration requires coordination of multiple independently running services. This highly decoupled and distributed architecture increases the complexity of orchestration, and existing static resource allocation strategies are difficult to provide sufficient fault tolerance in the face of sudden failures. Therefore, this article introduced a dynamic fault-tolerant scheduling algorithm based on Qlearning, which monitored service status in real-time, predicted potential faults, and dynamically adjusted resource allocation to improve system stability and fault tolerance. Firstly, microservices are modularized using the container orchestration tool Kubernetes, and containerization technology is utilized to encapsulate each service in a separate Pod for operation. Elastic allocation of resources can be achieved through Kubernetes’ automated scheduling mechanism, while efficient service communication and load balancing can be achieved through service mesh; Secondly, a dynamic faulttolerant scheduling algorithm based on Q-learning is introduced, combined with real-time monitoring data of CPU (Central Processing Unit), memory, network traffic, etc., deployed in containers, to establish a fault prediction model. Finally, long short-term memory networks can be used to dynamically analyze and predict the load status and historical fault records of each service node, identify potential faults in real time, and automatically adjust resource allocation strategies based on the prediction results, reallocate service loads or start backup instances. The experimental results show that the Q-learningbased dynamic fault-tolerant scheduling algorithm effectively improves the system’s fault tolerance and stability. The analysis of fault recovery time showed that the recovery time for CPU overload, memory leakage, and network congestion was significantly reduced within 48 hours, to 7 seconds, 9 seconds, and 12 seconds, respectively. This algorithm effectively solves the key problems of microservice orchestration and fault tolerance in containerized deployment environments, providing important support for improving system stability.},
+  doi={10.1109/ICCASIT62299.2024.10828011},
+  booktitle={2024 IEEE 6th International Conference on Civil Aviation Safety and Information Technology (ICCASIT)},
+  chapter={0}
+}
+
+@article{rayyan-384038123,
+  title={Microservice Debugging with Checkpoint-Restart - 2023 IEEE Cloud Summit},
+  year={2023},
+  month={7},
+  pages={58-63},
+  author={Merino, Xavier and Otero, Carlos E.},
+  keywords={Location awareness;Memory management;Microservice architectures;Debugging;Maintenance engineering...},
+  abstract={Debugging microservices in complex cloud-native deployments can be a daunting task due to interaction-based problems and challenges in reproducing such environments. Traditional fault localization approaches may be ineffective, leading to longer debugging times. To address these challenges, we propose utilizing checkpoint/restart (C/R) techniques to replicate buggy environments across different hardware configurations without code instrumentation or specialized kernels. Our approach integrates with existing debugging practices, making it adaptable and user-friendly. However, since C/R requires some downtime, we assess our approach’s practicality by analyzing data from 13,000 observations and estimating the time required to capture a service’s state. The minimal downtime introduced by our approach minimizes service interruption. This can be leveraged by operators to plan deployments, live debugging, maintenance, and game-day operations. By combining the power of C/R techniques with existing debugging practices, we aim to facilitate environment reproduction and reduce the iterative nature of the debugging process in complex cloud-native deployments.},
+  doi={10.1109/CloudSummit57601.2023.00016},
+  booktitle={2023 IEEE Cloud Summit},
+  chapter={0}
+}
+
+@article{rayyan-384038124,
+  title={Zero Touch Rolling Upgrade Cloud-native Network Functions - 2025 27th International Conference on Advanced Communications Technology (ICACT)},
+  year={2025},
+  month={2},
+  issn={1738-9445},
+  pages={451-458},
+  author={Bui, Thi Lua and Do, Hoang Phuong Thao and Nguyen, Xuan Chinh and Hoang, Van Hiep and Bui, Thanh Tung and Hoang, Thi Phuong Thao},
+  keywords={Cloud computing;Scalability;Quality of service;Containers;User experience;Software;Telecommunicat...},
+  abstract={As Cloud-Native Functions (CNFs) become increasingly crucial in modern telecommunications architecture, the demand for efficient, reliable, and uninterrupted upgrade processes has grown more urgent. Traditional upgrade mechanisms often require manual intervention and can lead to service downtime, negatively impacting Quality of Service (QoS) and breaching strict Service Level Agreements (SLA).To address these challenges, in this paper, we introduce the Zero Touch Upgrade solution for CNF — an automated upgrade solution designed to eliminate human intervention and minimize downtime. Our approach integrates intelligent orchestration systems, continuous monitoring, and rollback mechanisms to ensure seamless transitions between software versions without service disruption. By leveraging Kubernetes-based service mesh and container orchestration, we ensure high availability, scalability, and adherence to the Zero Downtime principle. Experimental results from our Viettel Online Charging System (vOCS) demonstrate significant improvements in upgrade performance, system reliability, and user experience, proving the solution’s effectiveness in dynamic and critical telecommunications environments.},
+  doi={10.23919/ICACT63878.2025.10936771},
+  booktitle={2025 27th International Conference on Advanced Communications Technology (ICACT)},
+  chapter={0}
+}
+
+@article{rayyan-384038125,
+  title={AutoDrift: A Forecast-Aware Concept Drift Detection and Retraining Pipeline in MLOps with CMAPSS - 2025 IEEE 11th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)},
+  year={2025},
+  month={7},
+  issn={2690-828X},
+  pages={94-100},
+  author={Myakala, Raj Kumar and Nagata, Praveen Kumar and Lavudya, Sampath and Pedhapally, Sanjeev Kumar and Podduturi, Vinithya Reddy},
+  keywords={Adaptation models;Atmospheric modeling;Concept drift;Time series analysis;Pipelines;Predictive mo...},
+  abstract={Concept drift poses a critical challenge to deploying reliable machine learning models in real-world production environments, particularly in time series forecasting and predictive maintenance systems. We present AutoDrift, a modular, forecast-aware framework to detect concept drift and trigger the automated retraining of models within modern MLOps pipelines. This approach integrates Facebook Prophet for time series prediction, statistical drift detection techniques such as the Kolmogorov-Smirnov test, and Apache Airflow to orchestrate retraining and deployment tasks in response to detected drift. Using the widely bench marked NASA CMAPSS dataset, we simulate real-world engine degradation and sensor drift conditions to evaluate AutoDrift's effectiveness in predictive maintenance scenarios. The results demonstrate that AutoDrift maintains high forecasting accuracy (91 % precision) while reducing retraining latency by 37 % compared to static retraining schedules. The framework supports model versioning via MLflow and is cloud-agnostic, enabling seamless deployment across Kubernetes, AWS, and on-premises environments. AutoDrift offers a practical solution to one of the most pressing MLOps challenges such as maintaining the adaptability of deployed models to changing data distributions, by unifying drift detection, retraining logic, and orchestration in a single, extensible pipeline. The system is designed to be interpretable, scalable, and easy to integrate into existing machine learning operations, making it suitable for industrial applications in aviation, IoT, and large-scale telemetry monitoring.},
+  doi={10.1109/BigDataService65758.2025.00019},
+  booktitle={2025 IEEE 11th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)},
+  chapter={0}
+}
+
+@article{rayyan-384038126,
+  title={Koney: A Cyber Deception Orchestration Framework for Kubernetes - 2025 IEEE European Symposium on Security and Privacy Workshops (EuroS&PW)},
+  year={2025},
+  month={6},
+  issn={2768-0657},
+  pages={690-702},
+  author={Kahlhofer, Mario and Golinelli, Matteo and Rass, Stefan},
+  keywords={Industries;Codes;Runtime;Source coding;Scalability;Software;Monitoring;cyber deception;deception ...},
+  abstract={System operators responsible for protecting software applications remain hesitant to implement cyber deception technology, including methods that place traps to catch attackers, despite its proven benefits. Overcoming their concerns removes a barrier that currently hinders industry adoption of deception technology. Our work introduces deception policy documents to describe deception technology “as code” and pairs them with Koney, a Kubernetes operator, which facilitates the setup, rotation, monitoring, and removal of traps in Kubernetes. We leverage cloud-native technologies, such as service meshes and eBPF, to automatically add traps to containerized software applications, without having access to the source code. We focus specifically on operational properties, such as maintainability, scalability, and simplicity, which we consider essential to accelerate the adoption of cyber deception technology and to facilitate further research on cyber deception.},
+  doi={10.1109/EuroSPW67616.2025.00084},
+  booktitle={2025 IEEE European Symposium on Security and Privacy Workshops (EuroS&PW)},
+  chapter={0}
+}
+
+@article{rayyan-384038127,
+  title={Intelligent Service Mesh Framework for API Security and Management - 2019 IEEE 10th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)},
+  year={2019},
+  month={10},
+  issn={2644-3163},
+  pages={0735-0742},
+  author={Hussain, Fatima and Li, Weiyue and Noye, Brett and Sharieh, Salah and Ferworn, Alexander},
+  keywords={Authentication;Access control;Monitoring;Load management;Routing;Tools;API Security;Service Mesh;...},
+  abstract={With the advancements in enterprise-level business development, the demand for new applications and services is overwhelming. For the development and delivery of such applications and services, enterprise businesses rely on Application Programming Interfaces (APIs). API management and classification is a cumbersome task considering the rapid increase in the number of APIs, and API to API calls. API Mashups, domain APIs and API service mesh are a few recommended techniques for ease of API creation, management, and monitoring. API service mesh is considered as one of the techniques in this regard, in which the service plane and the control plane are separated for improving efficiency as well as security. In this paper, we propose and implement a security framework for the creation of a secure API service mesh using Istio and Kubernetes. Afterwards, we propose an smart association model for automatic association of new APIs to already existing categories of service mesh. To the best of our knowledge, this smart association model is the first of its kind.},
+  doi={10.1109/IEMCON.2019.8936216},
+  booktitle={2019 IEEE 10th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)},
+  chapter={0}
+}
+
+@article{rayyan-384038128,
+  title={Distributed Online Service Coordination Using Deep Reinforcement Learning - 2021 IEEE 41st International Conference on Distributed Computing Systems (ICDCS)},
+  year={2021},
+  month={7},
+  issn={2575-8411},
+  pages={539-549},
+  author={Schneider, Stefan and Qarawlus, Haydar and Karl, Holger},
+  keywords={Training;Knowledge engineering;Network topology;Pipelines;Reinforcement learning;Quality of servi...},
+  abstract={Services often consist of multiple chained components such as microservices in a service mesh, or machine learning functions in a pipeline. Providing these services requires online coordination including scaling the service, placing instance of all components in the network, scheduling traffic to these instances, and routing traffic through the network. Optimized service coordination is still a hard problem due to many influencing factors such as rapidly arriving user demands and limited node and link capacity. Existing approaches to solve the problem are often built on rigid models and assumptions, tailored to specific scenarios. If the scenario changes and the assumptions no longer hold, they easily break and require manual adjustments by experts. Novel self-learning approaches using deep reinforcement learning (DRL) are promising but still have limitations as they only address simplified versions of the problem and are typically centralized and thus do not scale to practical large-scale networks. To address these issues, we propose a distributed self-learning service coordination approach using DRL. After centralized training, we deploy a distributed DRL agent at each node in the network, making fast coordination decisions locally in parallel with the other nodes. Each agent only observes its direct neighbors and does not need global knowledge. Hence, our approach scales independently from the size of the network. In our extensive evaluation using real-world network topologies and traffic traces, we show that our proposed approach outperforms a state-of-the-art conventional heuristic as well as a centralized DRL approach (60 % higher throughput on average) while requiring less time per online decision (1 ms).},
+  doi={10.1109/ICDCS51616.2021.00058},
+  booktitle={2021 IEEE 41st International Conference on Distributed Computing Systems (ICDCS)},
+  chapter={0}
+}
+
+@article{rayyan-384038129,
+  title={Leveraging Large Language Models for Anomaly Detection in Microservices Architectures - 2025 IEEE/SBC 37th International Symposium on Computer Architecture and High Performance Computing Workshops (SBAC-PADW)},
+  year={2025},
+  month={10},
+  pages={92-99},
+  author={Pedroso, Diego Frazatto and Almeida, Luís and Aisawa, William Akihiro Alves and Dutra, Inês and Bruschi, Sarita Mazzini},
+  keywords={Cloud computing;Virtual machine monitors;Large language models;Microservice architectures;Compute...},
+  abstract={Cloud computing has become a key enabler of scalable and high-performance applications, allowing systems to be deployed rapidly. At the same time, the increasing sophistication of cloud-native environments brings new challenges related to system dependability. Ensuring resilience under such conditions is a fundamental responsibility of IT providers, who must safeguard service continuity and operational stability. The widespread use of microservice-based designs has created an ecosystem with a growing number of interacting components, including frameworks, application layers, hypervisors, and orchestration platforms. This distributed and layered environment produces a massive volume of log data originating from heterogeneous sources. Without automated support, extracting useful insights from these logs becomes a highly complex task. One promising direction to mitigate this challenge is the use of Machine Learning, particularly methods grounded in Large Language Models (LLMs), which can dynamically detect recurring structures and anomalies in event streams. Building on this idea, our work introduces an anomaly detection framework deployed within a microservices environment running on Kubernetes with Istio. The framework integrates an LLM trained on a diverse set of fault scenarios. To create these scenarios, we relied on Chaos Mesh for fault injection and Locust for workload stress testing. The evaluation confirmed that the model achieved high accuracy in identifying anomalies. It consistently detected all injected faults, although a small number of false positives were observed. Importantly, these false alarms remained at acceptable levels, highlighting the approach’s practical applicability.},
+  doi={10.1109/SBAC-PADW69789.2025.00021},
+  booktitle={2025 IEEE/SBC 37th International Symposium on Computer Architecture and High Performance Computing Workshops (SBAC-PADW)},
+  chapter={0}
+}
+
